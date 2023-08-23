@@ -2,22 +2,28 @@
 
 ## 1.0 Switch and Router commands
 
+
+### Generic show commands
 ```
 show run
 show ip int brief
 ```
 
+### basic Console configuration
 ```
 line con 0
 password cisco
 login
 ```
-
+### basic Telnet configuration
 ```
 line vty 0 4
 password cisco
 login
 ```
+
+###
+
 
 ## 2.0 Switch commands
 
