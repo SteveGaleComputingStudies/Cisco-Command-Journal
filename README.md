@@ -10,7 +10,7 @@ hostname S1
 service password-encryption
 enable secert class
 banner motd #
-dont hack me. #
+dont hack me. or ill come after you #
 ```
 
 ### basic Console configuration
