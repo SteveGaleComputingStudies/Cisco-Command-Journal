@@ -64,7 +64,7 @@ ip ssh authentication-retries 3
 ```
 
 ```
-C:\>ssh -l steve 192.168.100.254  
+C:\>ssh steve@192.168.100.254  
 ```
 
 ## 3.0 Switch commands
