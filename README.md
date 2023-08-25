@@ -1,13 +1,16 @@
-# Cisco Command Journal
+# Cisco Router and Switch Commands
 
-## 1.0 Switch and Router commands
+## 1.0 Basic Switch and Router commands
 
 
-### Generic show commands
+### basic device configuration
 ```
-show run
-show ip int brief
-show version  
+no ip domain-lookup
+hostname S1
+service password-encryption
+enable secert class
+banner motd #
+dont hack me. #
 ```
 
 ### basic Console configuration
@@ -25,52 +28,16 @@ password cisco
 login
 exit
 ```
-
-### basic configuration
+### Generic show commands
 ```
-no ip domain-lookup
-hostname S1
-service password-encryption
-enable secert class
-banner motd #
-dont hack me. #
-
+show run
+show ip int brief
+show version  
+show interfaces
 
 ```
 
-
-## 2.0 Switch commands
-
-
-```
-show mac address-table 
-
-show vlan 
-show interface vlan1  
-show ip interface vlan1  
-
-show interface G0/1
-```
-
-
-
-
-## 3.0 Router commands
-
-### Router show commands
-```
-show ip route
-```
-
-### Router Interface configuration
-```
-interface G0/0/0
-ip address 192.168.1.1 255.255.255.0
-no shutdown
-
-```
-
-## 4.0 router and switch security
+## 2.0 router and switch security
 
 ### ssh login
 
@@ -99,6 +66,20 @@ ip ssh authentication-retries 3
 ```
 C:\>ssh -l steve 192.168.100.254  
 ```
+
+## 3.0 Switch commands
+
+```
+show mac address-table 
+
+show vlan 
+show interface vlan1  
+show ip interface vlan1  
+
+show interface G0/1
+```
+
+### 3.1 Switch security
 
 ### switch management security on VLan 100 and restricted ports 
 
@@ -136,3 +117,19 @@ show port security
 show port security F0/0  
 show interface F0/0
 ```
+
+## 4.0 Router commands
+
+### Router show commands
+```
+show ip route
+```
+
+### Router Interface configuration
+```
+interface G0/0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+
+```
+
